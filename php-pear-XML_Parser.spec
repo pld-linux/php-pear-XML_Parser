@@ -7,13 +7,12 @@
 Summary:	%{_pearname} - XML parsing class based on PHP's bundled expat
 Summary(pl):	%{_pearname} - klasa analizuj±c± XML przy u¿yciu expat
 Name:		php-pear-%{_pearname}
-%define _pre	beta2
 Version:	1.1.0
-Release:	0.%{_pre}
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_pre}.tgz
-# Source0-md5:	4aed6dd6976109c7f5db4819220dd88a
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	970c33b674afc39b9de85ea498100a55
 URL:		http://pear.php.net/package/XML_Parser/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -46,12 +45,12 @@ Ta klasa ma w PEAR status: %{_status}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
-install %{_pearname}-%{version}%{_pre}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}%{_pre}/tests/*
+%doc %{_pearname}-%{version}/tests/*
 %{php_pear_dir}/%{_class}/*.php
