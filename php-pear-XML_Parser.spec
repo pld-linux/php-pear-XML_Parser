@@ -3,15 +3,15 @@
 %define         _subclass       Parser
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - XML parsing class based on PHP's bundled expat
-Summary(pl):	%{_class}_%{_subclass} -
+Summary(pl):	%{_class}_%{_subclass} - klasa analizuj±c± XML przy u¿yciu expat
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-BuildRequires:	rpm-php-pearprov
 URL:		http://pear.php.net/
+BuildRequires:	rpm-php-pearprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,6 +23,12 @@ mode, it will look for a function named after each element
 in "event" mode it uses a set of generic callbacks.
 
 %description -l pl
+Ten pakiet zawiera klasê analizuj±c± XML opart± na wbudowanym w PHP
+rozszerzeniu xml. Klasa ta obs³uguje dwa podstawowe tryby pracy:
+"func" oraz "event". W trybie "func" szuka funkcji o nazwach
+odpowiadaj±cych ka¿demu elementowi (xmltag_ELEMENT dla znaczników
+pocz±tkowych i xmltag_ELEMENT_ dla znaczników koñcowych), natomiast w
+trybie "event" u¿ywa zestawu ogólnych callbacków.
 
 %prep
 %setup -q -c
