@@ -1,12 +1,13 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          XML
 %define         _subclass       Parser
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - XML parsing class based on PHP's bundled expat
 Summary(pl):	%{_pearname} - klasa analizuj±c± XML przy u¿yciu expat
 Name:		php-pear-%{_pearname}
-Version:	1.0
-Release:	3
+Version:	1.0.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -23,6 +24,8 @@ mode, it will look for a function named after each element
 (xmltag_ELEMENT for start tags and xmltag_ELEMENT_ for end tags), and
 in "event" mode it uses a set of generic callbacks.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Ten pakiet zawiera klasê analizuj±c± XML opart± na wbudowanym w PHP
 rozszerzeniu xml. Klasa ta obs³uguje dwa podstawowe tryby pracy:
@@ -30,6 +33,8 @@ rozszerzeniu xml. Klasa ta obs³uguje dwa podstawowe tryby pracy:
 odpowiadaj±cych ka¿demu elementowi (xmltag_ELEMENT dla znaczników
 pocz±tkowych i xmltag_ELEMENT_ dla znaczników koñcowych), natomiast w
 trybie "event" u¿ywa zestawu ogólnych callbacków.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
