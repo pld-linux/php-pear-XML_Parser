@@ -2,8 +2,8 @@
 %define         _class          XML
 %define         _subclass       Parser
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - XML parsing class based on PHP's bundled expat
-Summary(pl):	%{_class}_%{_subclass} - klasa analizuj±c± XML przy u¿yciu expat
+Summary:	%{_pearname} - XML parsing class based on PHP's bundled expat
+Summary(pl):	%{_pearname} - klasa analizuj±c± XML przy u¿yciu expat
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	2
