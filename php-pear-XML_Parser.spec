@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - XML parsing class based on PHP's bundled expat
 Summary(pl):	%{_pearname} - klasa analizuj±c± XML przy u¿yciu expat
 Name:		php-pear-%{_pearname}
-Version:	1.1.0
+Version:	1.2.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	970c33b674afc39b9de85ea498100a55
+# Source0-md5:	ff66601f10cc0140c364927ed0c23fda
 URL:		http://pear.php.net/package/XML_Parser/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
