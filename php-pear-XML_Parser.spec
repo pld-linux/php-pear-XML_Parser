@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - XML parsing class based on PHP's bundled expat
-Summary(pl):	%{_pearname} - klasa analizuj±c± XML przy u¿yciu expat
+Summary(pl.UTF-8):   %{_pearname} - klasa analizujÄ…cÄ… XML przy uÅ¼yciu expat
 Name:		php-pear-%{_pearname}
 Version:	1.2.8
 Release:	1
@@ -30,19 +30,19 @@ in "event" mode it uses a set of generic callbacks.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet zawiera klasê analizuj±c± XML opart± na wbudowanym w PHP
-rozszerzeniu xml. Klasa ta obs³uguje dwa podstawowe tryby pracy:
+%description -l pl.UTF-8
+Ten pakiet zawiera klasÄ™ analizujÄ…cÄ… XML opartÄ… na wbudowanym w PHP
+rozszerzeniu xml. Klasa ta obsÅ‚uguje dwa podstawowe tryby pracy:
 "func" oraz "event". W trybie "func" szuka funkcji o nazwach
-odpowiadaj±cych ka¿demu elementowi (xmltag_ELEMENT dla znaczników
-pocz±tkowych i xmltag_ELEMENT_ dla znaczników koñcowych), natomiast w
-trybie "event" u¿ywa zestawu ogólnych callbacków.
+odpowiadajÄ…cych kaÅ¼demu elementowi (xmltag_ELEMENT dla znacznikÃ³w
+poczÄ…tkowych i xmltag_ELEMENT_ dla znacznikÃ³w koÅ„cowych), natomiast w
+trybie "event" uÅ¼ywa zestawu ogÃ³lnych callbackÃ³w.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -51,7 +51,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
