@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - XML parsing class based on PHP's bundled expat
-Summary(pl.UTF-8):   %{_pearname} - klasa analizującą XML przy użyciu expat
+Summary(pl.UTF-8):	%{_pearname} - klasa analizującą XML przy użyciu expat
 Name:		php-pear-%{_pearname}
 Version:	1.2.8
 Release:	1
@@ -42,7 +42,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
