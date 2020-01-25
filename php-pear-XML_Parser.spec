@@ -1,6 +1,5 @@
 %define		_status		stable
 %define		_pearname	XML_Parser
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - XML parsing class based on PHP's bundled expat
 Summary(pl.UTF-8):	%{_pearname} - klasa analizującą XML przy użyciu expat
 Name:		php-pear-%{_pearname}
